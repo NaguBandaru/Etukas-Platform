@@ -1,0 +1,98 @@
+.banner-carousel {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.banner-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.banner-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.banner-content {
+    color: white;
+}
+
+.banner-content h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.banner-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--primary-red);
+    width: 20px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .banner-carousel {
+        height: 160px;
+    }
+
+    .banner-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .banner-content p {
+        font-size: 0.8rem;
+    }
+
+    .banner-overlay {
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,77 @@
+.promo-section-container {
+    background-color: #e8f5e9;
+    /* Pastel Green */
+    padding: 16px;
+    border-radius: 20px;
+    margin: 1rem 12px;
+}
+
+.promo-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.promo-product-card {
+    background: white;
+    border-radius: 16px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.promo-product-card:hover {
+    transform: translateY(-2px);
+}
+
+.card-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #fff;
+    min-height: 120px;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 12px;
+    text-align: left;
+}
+
+.card-subtitle {
+    font-size: 12.5px;
+    color: #666;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+}
+
+.card-highlight-text {
+    font-size: 15px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+}
+
+@media (max-width: 360px) {
+    .promo-product-card {
+        height: 200px;
+    }
+
+    .card-highlight-text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,483 @@
+.heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.statCard {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.statIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.statValue {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.statLabel {
+    font-size: 0.8rem;
+    color: var(--gray-text);
+}
+
+.formCard {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-red);
+}
+
+.dashboardWrapper {
+    padding-bottom: 2rem;
+}
+
+.dashboardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sellerIdBadge {
+    background: rgba(234, 32, 39, 0.1);
+    color: var(--primary-red);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 1px solid rgba(234, 32, 39, 0.2);
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.activeTab {
+    color: var(--primary-red);
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-red);
+}
+
+.listingsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.listingCard {
+    background: white;
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s;
+}
+
+.listingCard:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.listingTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.listingPrice {
+    font-weight: 600;
+    color: var(--primary-red);
+    margin-bottom: 0.75rem;
+}
+
+.typeTag {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.listingLoc {
+    font-size: 0.8rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: #ff5252;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+    background: #ffebee;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #888;
+    background: white;
+    border-radius: var(--radius-lg);
+    grid-column: 1 / -1;
+}
+
+.requestCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1rem;
+}
+
+.reqTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.reqTypeBadge {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    background: #333;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.customerInfo {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.25rem;
+}
+
+.distBadge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1976d2;
+    background: #e3f2fd;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.reqMetaGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.25rem 0;
+    padding: 1rem 0;
+    border-top: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+}
+
+.metaLabel {
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.metaValue {
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.statusBadge {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.statusBadge[data-status="pending"] {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.statusBadge[data-status="confirmed"] {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.statusBadge[data-status="cancelled"] {
+    background: #ffebee;
+    color: #c62828;
+}
+
+@media (max-width: 768px) {
+    .dashboardWrapper {
+        padding-bottom: calc(var(--bottom-nav-height) + 1rem);
+    }
+
+    .dashboardContainer {
+        padding: 1rem;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+    }
+
+    /* Header section - stack vertically */
+    .dashboardContainer>div:first-child {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1rem;
+    }
+
+    .sellerIdBadge {
+        font-size: 0.7rem;
+        padding: 2px 6px;
+    }
+
+    /* Tabs - make scrollable if needed */
+    .tab {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    /* Form card - reduce padding */
+    .formCard {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .formCard h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Form inputs - larger touch targets */
+    .input,
+    .formGroup input,
+    .formGroup select,
+    .formGroup textarea {
+        padding: 0.875rem;
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+    }
+
+    /* Stack form fields on mobile */
+    .formCard .flex {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .formCard .flex>div {
+        width: 100% !important;
+    }
+
+    /* Listings grid - single column */
+    .listingsGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .listingCard {
+        padding: 1rem;
+    }
+
+    .listingTitle {
+        font-size: 1rem;
+    }
+
+    .typeTag {
+        font-size: 0.65rem;
+    }
+
+    /* Request cards - optimize for mobile */
+    .requestCard {
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .requestCard>div:first-child {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75rem;
+    }
+
+    .reqTitle {
+        font-size: 1rem;
+    }
+
+    .customerInfo {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+
+    .distBadge {
+        align-self: flex-start;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+
+    /* Meta grid - stack on very small screens */
+    .reqMetaGrid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin: 1rem 0;
+        padding: 0.75rem 0;
+    }
+
+    .reqMetaGrid>div {
+        grid-column: span 1 !important;
+    }
+
+    .metaLabel {
+        font-size: 0.7rem;
+    }
+
+    /* Action buttons - stack on mobile */
+    .requestCard>div:last-child {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 0.75rem;
+    }
+
+    .requestCard>div:last-child>div {
+        width: 100%;
+    }
+
+    .requestCard>div:last-child .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .statusBadge {
+        text-align: center;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* Empty state */
+    .emptyState {
+        padding: 3rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .emptyState svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Stats grid - 2 columns on mobile */
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .statCard {
+        padding: 0.875rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .statIcon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .statValue {
+        font-size: 1.1rem;
+    }
+
+    .statLabel {
+        font-size: 0.75rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .dashboardContainer {
+        padding: 0.75rem;
+    }
+
+    .heading {
+        font-size: 1.1rem;
+    }
+
+    .formCard {
+        padding: 0.875rem;
+    }
+
+    .listingCard,
+    .requestCard {
+        padding: 0.875rem;
+    }
+
+    .reqMetaGrid {
+        gap: 0.5rem;
+    }
+
+    /* Make buttons more touch-friendly */
+    .btn {
+        min-height: 44px;
+    }
+}
