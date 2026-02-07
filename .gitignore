@@ -2,8 +2,9 @@ node_modules/
 client/node_modules/
 client/dist/
 server/node_modules/
+# Ignore server's env file
 server/.env
-.env
+# .env (tracked) removed from ignore to allow committing root .env
 .env.local
 .env.*.local
 *.log
